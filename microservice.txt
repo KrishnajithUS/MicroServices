@@ -1,0 +1,71 @@
+Monolith Architecture and Microservice Architecture
+
+monolithi architecture
+
+In this the whole code is a part of a single unit.
+eg:
+user-auth notification sales payment all in one application or
+one uint
+which means that the application must written in one language or
+one tech stack
+teams need to be careful to not affect each others work
+
+1 single artifact(if i change the code of payment we needt to
+change other  parta also) so you must redeploy the entire application
+on each update
+*challenges
+
+application is too large and complex
+parts are more tangled into each other
+you can only scale the entire app instead of a sepcific server
+  *Higher infrastructure costs
+
+Release process takes longer(we needed to unit test the entire application)
+Bug in any module can potentially bring down the entire application
+
+Microservices Architecture.
+
+split application into smaller independent services
+? how to break down the application
+? what code goes where
+? How many services do we create
+
+split the microservies into components based on the business functionalities
+1 server 1 specific job
+they should be self contained and independent
+ * ie each one is developed ,deployed and scaled separately
+ * apps should be loosely coupled
+@ how microservices communicate with each other ?
+1) communication via api calls(synchronous)
+2) Using a message Broker
+3) service mesh
+ci cd - continuos integration and continuous deployment
+
+
+
+docker get an image from docker hub and create it instance and
+run it on a container.
+to pull an image from hub
+docker image pull ubuntu:latest
+to run
+docker run it id /bin/bash
+
+how to dockerize django app
+
+2 ways
+create project docarize
+create docker and then django on it
+docs to refer
+https://blog.logrocket.com/dockerizing-django-app/
+the instruction we write in a terminal goes
+ to docker client
+ and then goes to server called
+ docker daemon
+ the daemon and server wil contact using rest api
+
+docker and docercompose
+https://medium.com/geekculture/how-to-dockerize-a-simple-django-app-3cb0d5a71eea
+
+commands
+
+sudo docker-compose run web django-admin startproject name

@@ -1,0 +1,4 @@
+***Just do it !!!***
+1)fist create django project with django rest
+2)create two files
+ Dockerfile and docker-componse

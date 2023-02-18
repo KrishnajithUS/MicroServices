@@ -1,0 +1,44 @@
+rabbitMQ is a message broker sites between a requst response or two components
+which contact throught tcp connection.
+the one component must hear request before sending the response.
+this is called tightly coupled.
+but when i use rabbitmq the requst is added to taskt queue.
+and then got to tasks.
+so that the component can canume the task from queue and move to next one.
+this is called decoupling
+it also helps with scalability.
+it is more performant
+rabbitmq is an implementation of amqp(advanced message queue protocol)
+
+eg:
+checkout - > RabbitMQ - > inventory
+in this amqp ratherthan sending message from checkout to rabbit mq it
+sends to an exchange(like post office) and then it sendst to message services
+through key bindings(there might be more than one message brokers.)
+Exchange types in rabbitmq
+1)direct exchange
+2)fanout exchange
+3)topic exchange
+4)Headers exchange
+
+
+
+
+
+
+There are many resources available for practicing and improving your problem-solving skills in Python. Here are a few suggestions:
+
+    LeetCode - LeetCode is a popular platform for practicing coding problems in various programming languages, including Python. They have a vast collection of coding challenges that range from easy to hard difficulty level, and the website also provides discussion forums where you can learn from other people's solutions.
+
+    HackerRank - HackerRank is another popular website for practicing coding challenges in various programming languages. They have a wide range of problems, from algorithmic challenges to SQL and Django problems. HackerRank also provides discussion forums where you can learn from other people's solutions.
+
+    Project Euler - Project Euler is a series of challenging mathematical/computer programming problems that require mathematical insights and programming skills to solve. The problems are available in a wide range of difficulty levels and can be a great way to develop your problem-solving skills in Python.
+
+    Codecademy - Codecademy is an online learning platform that provides interactive coding lessons for various programming languages, including Python. They have exercises and projects that range from beginner to advanced difficulty level, and their platform is designed to help you practice and apply what you learn.
+
+    Python Challenge - Python Challenge is a website that presents a series of puzzles that require you to use Python programming skills to solve them. These puzzles are designed to be challenging and can be a great way to develop your problem-solving skills in Python.
+docs to refer
+https://hevodata.com/learn/rabbitmq-queue/
+
+
+
